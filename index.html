@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--https://color.adobe.com/kuler/8418067-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/w3.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<!-- Navbar (sit on top) -->
+  <div id="nav" class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <div class="centering">
+        <a href="#home" class="w3-bar-item w3-wide">MEGAN DAVIS</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#portfolio" class="w3-bar-item"> PORTFOLIO</a>
+          <a href="#skills" class="w3-bar-item"> SKILLS</a>
+          <a href="#contact" class="w3-bar-item"> CONTACT</a>
+        </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </div>
+  </div>
+   
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-white" style="display:none; background:#313732;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+
+<div class="introduction">
+  <br><br><br>
+  <div class="centering centering-text w3-text-white">
+    <h1>Hello!</h1>
+    <h3>I'm <span style="color:#F36C62;"><b>Megan Davis</b></span>, an application performance engineer that dabbles in web development.</h3>
+  </div>
+</div>
+
+<div id="portfolio" class="portfolio centering-text centering">
+  <h1>PORTFOLIO</h1>
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openPortfolio(event, 'all');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-border-scheme-pink w3-padding">ALL</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openPortfolio(event, 'web');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">WEB</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openPortfolio(event, 'game');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">GAME</div>
+    </a>
+  </div>
+      
+  <div id="all" class="w3-container city" style="display:block;">
+      <div class="w3-row-padding w3-padding-16 w3-center">
+          <div class="w3-third">
+              <img src="img/chrono.PNG" alt="chrono" style="width:100%; height:230px;">
+              <h3>Chronocirrius</h3>
+              <p><b>Role:</b> Designer, Front-End Programmer</p>
+              <p><b>Utilized:</b> Python, Flask, HTML5/CSS3</p>
+              <p><a href="http://chronocirrus.com/">Chronocirrius</a></p>
+              <p style="text-align: justify;">Chronocirrius is the web interface for the Chrono package (a hybrid rule-based and machine learning system that identifies temporal expressions in text and normalizes them into the Semantically Compositional Annotations) created by the Natural Language Processing lab, run by Dr. Bridget McInnes, at Virginia Commonwealth University.</p>
+          </div>
+          <div class="w3-third">
+              <img src="img/loc_updated.PNG" alt="library_of_Codexes" style="width:100%; height:230px;">
+              <h3>Library of Codexes</h3>
+              <p><b>Role:</b> Designed, Programmer</p>
+              <p><b>Utilized:</b> PHP7, HTML5/CSS, JS, AJAX</p>
+              <p><a href="https://libraryofcodexes.com">Library of Codexes</a></p>
+              <p style="text-align: justify;">Library of Codexes was created to have an archive of easy to read in-game text. The web server stores the ebooks that are created for each videogame, and then served to the user at request.</p>
+          </div>
+          <div class="w3-third">
+              <img src="img/transverse_menu.jpg" alt="transverse" style="width:100%; height:230px;">
+              <h3>Transverse</h3>
+              <p><b>Role:</b> Programmer, Project Manager</p>
+              <p><b>Utilized:</b> Unity 2D, C#, Microsoft Kinect</p>
+              <p style="text-align: justify;">Transverse is a 2D game designed to challenge the player’s hand-eye coordination as well as their memory. The player must get from Point A to Point B by navigating the player’s avatar (by raising or lowering their hand) through a series of treacherous pathways. Whenever the player’s avatar manages to come into contact with the hazardous landscape, the game resets and the player must start over.</p>
+          </div>
+        </div>
+    <div class="w3-row-padding w3-padding-16 w3-center">  
+      <div class="w3-third">
+          <img src="img/nice_job.jpg" alt="nice_job" style="width:100%; height:230px;">
+          <h3>Nice Job</h3>
+          <p><b>Role:</b> Programmer</p>
+          <p><b>Utilized:</b> Unity 2D, C#</p>
+          <p style="text-align: justify;">Made in 48 hours at the 2015 Global Game Jam, as a maintenence worker, you must solve puzzles in order to fix an unknown problem aboard a spacecraft. Try to do a nice job, or there may be consequences.</p>
+      </div>
+      <div class="w3-third">
+          <img src="img/3d_vis1.jpg" alt="nice_job" style="width:100%; height:230px;">
+          <h3>3D Visualization</h3>
+          <p><b>Role:</b> Programmer, Project Manager</p>
+          <p><b>Utilized:</b> Unity 3D, C#, Oculus Rift, Novint Falcon</p>
+          <p style="text-align: justify;">Designed and developed a 3D simulation that immerses the user in an interactive environment. Within the environment the user can move and explore the virtual world, pick up objects, and throw objects. In addition, each object has its own weight that can be felt when interacted with.</p>
+      </div>
+    </div>
+  </div>
+
+    <div id="web" class="w3-container city" style="display:none">
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-third">
+                <img src="img/chrono.PNG" alt="chrono" style="width:100%; height:230px;">
+                <h3>Chronocirrius</h3>
+                <p><b>Role:</b> Designer, Front-End Programmer</p>
+                <p><b>Utilized:</b> Python, Flask, HTML5/CSS3</p>
+                <p><a href="http://chronocirrus.com/" style="color:#8AA8B0; text-decoration: underline;">Chronocirrius</a></p>
+                <p style="text-align: justify;">Chronocirrius is the web interface for the Chrono package (a hybrid rule-based and machine learning system that identifies temporal expressions in text and normalizes them into the Semantically Compositional Annotations) created by the Natural Language Processing lab, run by Dr. Bridget McInnes, at Virginia Commonwealth University.</p>
+            </div>
+            <div class="w3-third">
+                <img src="img/loc_updated.PNG" alt="library_of_Codexes" style="width:100%; height:230px;">
+                <h3>Library of Codexes</h3>
+                <p><b>Role:</b> Designed, Programmer</p>
+                <p><b>Utilized:</b> PHP7, HTML5/CSS, JS, AJAX</p>
+                <p><a href="https://libraryofcodexes.com" style="color:#8AA8B0; text-decoration: underline;">Library of Codexes</a></p>
+                <p style="text-align: justify;">Library of Codexes was created to have an archive of easy to read in-game text. The web server stores the ebooks that are created for each videogame, and then served to the user at request.</p>
+            </div>
+          </div>
+    </div>
+
+    <div id="game" class="w3-container city" style="display:none">
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-third">
+          <img src="img/transverse_menu.jpg" alt="transverse" style="width:100%">
+          <h3>Transverse</h3>
+          <p><b>Role:</b> Programmer, Project Manager</p>
+          <p><b>Utilized:</b> Unity 2D, C#, Microsoft Kinect</p>
+          <p style="text-align: justify;">Transverse is a 2D game designed to challenge the player’s hand-eye coordination as well as their memory. The player must get from Point A to Point B by navigating the player’s avatar (by raising or lowering their hand) through a series of treacherous pathways. Whenever the player’s avatar manages to come into contact with the hazardous landscape, the game resets and the player must start over.</p>
+        </div>
+        <div class="w3-third">
+          <img src="img/nice_job.jpg" alt="nice_job" style="width:100%">
+          <h3>Nice Job</h3>
+          <p><b>Role:</b> Programmer</p>
+          <p><b>Utilized:</b> Unity 2D, C#</p>
+          <p style="text-align: justify;">Made in 48 hours at the 2015 Global Game Jam, as a maintenence worker, you must solve puzzles in order to fix an unknown problem aboard a spacecraft. Try to do a nice job, or there may be consequences.</p>
+        </div>
+        <div class="w3-third">
+          <img src="img/3d_vis1.jpg" alt="nice_job" style="width:100%">
+          <h3>3D Visualization</h3>
+          <p><b>Role:</b> Programmer, Project Manager</p>
+          <p><b>Utilized:</b> Unity 3D, C#, Oculus Rift, Novint Falcon</p>
+          <p style="text-align: justify;">Designed and developed a 3D simulation that immerses the user in an interactive environment. Within the environment the user can move and explore the virtual world, pick up objects, and throw objects. In addition, each object has its own weight that can be felt when interacted with.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="skills" class="container">
+  <div class="skills centering-text">
+    <h1>SKILLS</h1>
+      <!-- First Skills Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-quarter">
+          <h3><span class="surronding">[</span> Python <span class="surronding">]</span></h3>
+          <p>1 year of experience, used daily.</p>
+          <p>Matplotlib, Seaborn, PANDAS, FLASK.</p>
+        </div>
+        <div class="w3-quarter">
+          <h3><span class="surronding">.</span> Perl <span class="surronding">.</span></h3>
+          <p>3+ years of experience, used weekly.</p>
+        </div>
+        <div class="w3-quarter">
+          <h3><span class="surronding">/</span> C# <span class="surronding">/</span></h3>
+          <p>2+ years of experience, used rarely.</p>
+          <p>Unity.</p>
+        </div>
+        <div class="w3-quarter">
+          <h3><span class="surronding">{</span> Javascript <span class="surronding">}</span></h3>
+          <p>2+ years of experience, used rarely.</p>
+        </div>
+      </div>
+      
+      <!-- Second Skills Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-third">
+          <h3><span class="surronding">&lt;</span> HTML5/CSS3 <span class="surronding">&gt;</span> </h3>
+          <p>4+ years of experience, used daily.</p>
+        </div>
+        <div class="w3-third">
+          <h3><span class="surronding">+</span> PHP <span class="surronding">+</span></h3>
+          <p>3+ years of experience, used often.</p>
+        </div>
+        <div class="w3-third">
+          <h3><span class="surronding">;</span> MYSQL <span class="surronding">;</span></h3>
+          <p>2+ years of experience, used often.</p>
+        </div>
+      </div>
+  </div>      
+</div>
+
+<div id="contact" class="portfolio centering-text">
+  <h1>CONTACT</h1>
+  <p>The best way to get contact me is through Linkedin or Github.</p>
+  <a href="https://www.linkedin.com/in/madavis5"><i class="fab fa-linkedin fa-4x"></i></a>
+  <a href="https://github.com/Davis24"><i class="fab fa-github-square fa-4x"></i></a>
+</div>
+
+ <!-- Footer -->
+ <footer class="w3-row-padding w3-padding-32 centering-text">
+      <h4>Designed and Coded with love by, <a href="https://github.com/Davis24/Davis24.github.io">Megan Davis </a> (2019).</h4>  
+</footer>
+
+    
+<script>
+  function openPortfolio(evt, portfolio) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-border-scheme-pink", "");
+    }
+    document.getElementById(portfolio).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-border-scheme-pink";
+  }
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+</script>
+        
