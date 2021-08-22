@@ -6,12 +6,19 @@ a:hover{
     color:black;
 }
 
+
 .subtitle, #name{
   color:#ff7e79 !important;
 }
 
 .icon-list > a:not(:first-child){
   margin-left:2%;
+}
+
+.card-link{
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
 }
 
 
