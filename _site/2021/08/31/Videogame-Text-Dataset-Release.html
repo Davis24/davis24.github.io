@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Megan Davis is a data Scientist / performance Engineer with over 5+ years of operational experience. My goal is to create easy-to-use solutions that help reduce toil for everyday technicians.">
+    <link rel="icon" type="image/x-icon" href="/assets/images/mIcon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type='text/javascript' src='/assets/js/general.js'></script>
+    <script src="https://kit.fontawesome.com/bea6cb6946.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/poststyles.css">
+
+    <title>Videogame Text Dataset Release</title>
+  </head>
+  <body>
+      <!-- Navigation Bar -->   
+  <nav class="navbar container " role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a id="name" class="navbar-item" href="https://davis24.github.io/" style="font-family: 'Caveat', cursive; font-size: 24px;">
+        Megan Davis
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+   
+    <div id="navbarBasic" class="navbar-menu">
+      <div class="navbar-start">
+        
+            <a class="navbar-item" href="/" >Home</a>
+        
+            <a class="navbar-item" href="/blog.html" >Blog</a>
+        
+            <a class="navbar-item" href="/projects.html" >Projects</a>
+                
+      </div>
+  
+      <div class="navbar-end">
+            <a class="navbar-item" href="https://dev.to/davis24"><i class="fa-brands fa-dev fa-2xl"></i></a>
+            <a class="navbar-item" href="https://github.com/Davis24"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/madavis5/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <section class="section">
+    <div class="container">
+        <p class="subtitle">31 Aug 2021</p>
+        <h1 class="title is-1" >Videogame Text Dataset Release</h1>
+        <div class="tags are-medium">
+            
+            <span class="tag">videogames</span>
+            
+            <span class="tag">datasets</span>
+            
+        </div>
+        <hr>
+
+        <div markdown="1">
+            <h3 id="background">Background</h3>
+
+<p>In 2016 I released LibraryofCodexes, a website that aimed to gather videogame text into one uniform place (think in-game notes, books, letters, audio recordings etc). This was because I found that I was too engaged in finishing a quest or killing a monster to take the time to read it, and while wikis existed they can sometimes be tedious to navigate. Ultimately the website has gone through a few iterations since 2016. Most of the original design was stripped away in favor of shifting to an eBook repository and the database that has each individual entry is now private.</p>
+
+<p>However, I’ve recently started reading through a few academic papers on Natural Language Processing applied to videogames (it’s a rather small domain). I realized that there is a lack of easily accessible text and I’ve been sitting on a data set for the past few years that just needed to be formatted and released.</p>
+
+<h3 id="datasets">Datasets</h3>
+
+<p>I’ve gone ahead and released the full data set in json format to github. This repository, at the time of release, contains a slew of different game series (see full list below). Each videogame has it’s own README which details what data has been collected, what kind of quirks, and the degree of sanitization.</p>
+
+<h3 id="videogame-series-list">Videogame Series List</h3>
+
+<ul>
+  <li>Assassin’s Creed</li>
+  <li>Baldur’s Gate</li>
+  <li>Battlefield</li>
+  <li>Crysis</li>
+  <li>Dead Space</li>
+  <li>Destiny</li>
+  <li>Deus Ex</li>
+  <li>Diablo</li>
+  <li>Doom</li>
+  <li>Dragon Age</li>
+  <li>Dying Light</li>
+  <li>Fable</li>
+  <li>Fallout</li>
+  <li>Gears of War</li>
+  <li>Horizon Zero Dawn</li>
+  <li>Kingdoms of Amalur</li>
+  <li>Mass Effect</li>
+  <li>Metroid Prime</li>
+  <li>Middle-Earth</li>
+  <li>Nier</li>
+  <li>Red Dead Redepmtion</li>
+  <li>Resident Evil</li>
+  <li>Star Wars: The Old Republic</li>
+  <li>System Shock</li>
+  <li>The Divison</li>
+  <li>The Elder Scrolls</li>
+  <li>The Last of Us</li>
+  <li>The Witcher</li>
+  <li>Tomb Raider</li>
+  <li>Watch Dogs</li>
+  <li>World of Warcraft</li>
+</ul>
+
+<p>Hopefully this can help make someone’s research just a little bit easier. I will continue to update the repository in the future as I update LibraryofCodexes with new games.</p>
+
+        </div>
+    </div><!--container-->
+</section>
+
+    <footer class="footer mt-6">
+    <div class="content has-text-centered">
+      <p><i class="fa-solid fa-mug-hot"></i> Powered by coffee. <i class="fa-solid fa-mug-hot"></i></p>
+      <p><i class="fa-solid fa-heart"></i> Built with love. <i class="fa-solid fa-heart"></i></p>
+      <p><strong>Megan Davis @ 2023</strong></p>
+      <p ><a href="https://dev.to/davis24" class="social-icon"><i class="fa-brands fa-dev fa-2xl"></i></a>
+        <a href="https://github.com/Davis24" class="social-icon"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/madavis5/" class="social-icon"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

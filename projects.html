@@ -1,0 +1,63 @@
+---
+layout: default
+title: Project
+---
+<div class="container">
+    <h1 class="title is-2 mb-6 mt-6">Projects</h1>  
+     <!-- In the future if I want to show different types just split them into different sections Gaming / Web / Scripts-->     
+    <div class="columns">
+        {% for project in site.projects %}
+            {% assign remainder = forloop.index0 | modulo: 3 %}
+            {% if forloop.index0 == 0 %}
+                <div class="column is-two-fifths {{ project.type }}">
+            {% elsif remainder == 0 %}
+            </div>
+            <div class="columns {{ project.type }}">
+                <div class="column {{ project.type }}">
+            {% else %}
+                {% if forloop.index0 == 5 %}
+                <div class="column is-two-fifths {{ project.type }}">
+                {% else %}
+                <div class="column {{ project.type }}">
+                {% endif %}
+                
+            {% endif %}
+                <div class="hvr-grow card">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="subtitle is-6 mb-5">{{ project.tags | sort | join: ", " }} 
+                                <span style="float:right;">
+                                    {{ project.year_started }} - {{ project.year_ended }}
+                                </span>
+                            </p>
+                            <p class="title is-3 mb-1">{{ project.title }}</p>
+                            <div class="icon-list mb-4 mt-4">
+                                {% if project.website_url %}
+                                <a href="{{ project.website_url }}">
+                                    <span class="icon">
+                                        <i class="fas fa-link"></i>
+                                    </span>
+                                    Website
+                                </a>
+                                {% endif %}
+                                {% if project.github_url %}
+                                <a href="{{ project.github_url }}">
+                                    <span class="icon">
+                                        <i class="fab fa-github-alt"></i>
+                                    </span>
+                                    Github
+                                </a>
+                                {% endif %}
+                            </div><!-- Icon List -->
+
+                            {{ project.content }}
+                       
+                        </div><!--content-->
+                    </div><!-- Card-Content -->
+                </div><!-- hvr-grow-card -->
+            </div><!--column-->
+        {% endfor %}
+    </div><!--Columns-->
+</div><!--container-->
+
+

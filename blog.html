@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="section">
+  <div class="container">
+      <h1 class="title is-2 mb-6">Latest Posts</h1>
+      <div class="columns">
+        <div class="column">
+            {% for post in site.posts %}
+                <p class="subtitle is-6 mb-5" style="opacity: 85%;">{{ post.date | date_to_string }}</p>
+                <h4 class="title is-4 mt-2"><a href="{{ post.url }}" class="has-text-black-bis">{{ post.title }}</a></h4>
+                <hr class="has-background-black" style="width:3%;">
+                <p class="mb-6">{{ post.description }}</p>
+                {% if forloop.last %}     
+                {% else %}
+                    <hr>
+                {% endif %}
+            {% endfor %}
+        </div>
+      </div><!--Columns-->
+  </div><!--container-->
+</section>
+

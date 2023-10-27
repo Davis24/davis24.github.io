@@ -1,18 +1,52 @@
-
-#nav a{
-    text-decoration: none;
+.social-icon{
+  color: #4a4a4a;
 }
+
+a {
+  color: black;
+}
+
 a:hover{
-    color:black;
+    color: #ff7e79 !important;
+    text-decoration: underline;
 }
 
+#split-line {
+  background-color: #ff7e79; 
+  height:215px; 
+  transform: skewY(-4deg); 
+  opacity: 90%;
+}
+
+#profile-img{
+  height: 236px; 
+  width:250px; 
+  margin-left: auto; 
+  margin-right:auto;
+}
+
+.underline-link{
+  color:black; 
+  text-decoration: underline;
+}
 
 .subtitle, #name{
   color:#ff7e79 !important;
 }
 
+.descriptive-text {
+  font-weight:200 !important; 
+  color:black !important;
+}
+
 .icon-list > a:not(:first-child){
   margin-left:2%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-link{
@@ -21,6 +55,9 @@ a:hover{
   height: 100%; width: 100%;
 }
 
+.card-footer{
+  margin-top: auto
+}
 
 /* Grow Library */
 .hvr-grow {
@@ -34,8 +71,6 @@ a:hover{
   transition-duration: 0.3s;
   transition-property: transform;
 }
-
-
 
 .hvr-grow:hover,
 .hvr-grow:focus,
